@@ -1,14 +1,23 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
+
+
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <div class="logo">
+      <a href="https://vitejs.dev" target="_blank">
+        <img src="./assets/vite.svg" class="vite" alt="Vite logo" />
+      </a>
+      <a href="https://vuejs.org/" target="_blank">
+        <img src="./assets/vue.svg" class="vue" alt="Vue logo" />
+      </a>
+    </div>
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="YzDemoUI-Vite3" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -16,7 +25,6 @@ import HelloWorld from "./components/HelloWorld.vue";
       </nav>
     </div>
   </header>
-  <YSelectInput />
   <RouterView />
 </template>
 
@@ -27,8 +35,27 @@ header {
 }
 
 .logo {
-  display: block;
+  display: flex;
   margin: 0 auto 2rem;
+  will-change: filter;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.logo>a {
+  width: 80px;
+}
+
+.logo>a>img {
+  width: 100%;
+}
+
+.vite:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
 }
 
 nav {
