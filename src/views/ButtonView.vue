@@ -1,9 +1,5 @@
 <template>
   <div class="ButtonView">
-    <h3 class="title">默认：</h3>
-    <div class="showPrimary">
-      <YButton size="middle" type="primary">主题</YButton>
-    </div>
     <h3 class="title">尺寸：</h3>
     <div class="showSize">
       <YButton size="mini" type="primary">mini</YButton>
