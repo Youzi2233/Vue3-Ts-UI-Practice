@@ -8,8 +8,7 @@
   "compilerOptions": {
     "composite": true,
     "types": [
-      "node",
-      "webpack-env"
+      "node"
     ]
   }
 }

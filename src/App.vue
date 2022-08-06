@@ -1,18 +1,16 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
-
-
+import { RouterLink, RouterView } from 'vue-router';
+import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
   <header>
     <div class="logo">
       <a href="https://vitejs.dev" target="_blank">
-        <img src="./assets/vite.svg" class="vite" alt="Vite logo" />
+        <img src="./assets/img/vite.svg" class="vite" alt="Vite logo" />
       </a>
       <a href="https://vuejs.org/" target="_blank">
-        <img src="./assets/vue.svg" class="vue" alt="Vue logo" />
+        <img src="./assets/img/vue.svg" class="vue" alt="Vue logo" />
       </a>
     </div>
 
@@ -21,7 +19,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/button">Button</RouterLink>
       </nav>
     </div>
   </header>
@@ -42,11 +40,11 @@ header {
   justify-content: space-between;
 }
 
-.logo>a {
+.logo > a {
   width: 80px;
 }
 
-.logo>a>img {
+.logo > a > img {
   width: 100%;
 }
 
@@ -87,7 +85,6 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
   }
 
   .logo {

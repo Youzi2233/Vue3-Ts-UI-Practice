@@ -6,7 +6,9 @@ import router from "./router";
 
 import YzDemoUI from '@/lib/index'
 
-import "./assets/main.css";
+import './assets/style/common.less'
+import "./assets/style/main.css";
+
 
 const app = createApp(App);
 

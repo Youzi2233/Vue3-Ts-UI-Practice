@@ -3,6 +3,8 @@ interface Module {
     default: Component
 }
 const modulesFiles: Record<string, Module> = import.meta.glob('./*/index.vue', { eager: true })
+console.log(modulesFiles);
+
 
 export default {
     install(app: App) {
